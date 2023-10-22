@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="Hello World!">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompactTextView"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Updates"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompactLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Latitude :"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompactLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Longitude :"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartLocationTracking"
+            android:layout_marginTop="10dp"
+            android:text="Start Location Tracking"
+            app:cornerRadius="20dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRemoveLocationTracking"
+            android:layout_marginTop="10dp"
+            android:text="Remove Location Tracking"
+            app:cornerRadius="20dp"/>
+    </LinearLayout>
